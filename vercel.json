@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/csa/(.*\\.(png|jpg|jpeg|gif|svg|ico|webp))",
+      "dest": "/csa/$1"
+    },
+    {
+      "src": "/csa/(.*)",
+      "dest": "/csa/$1"
+    }
+  ]
+} 
