@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "routes": [
+  "builds": [
     {
-      "src": "/csa/(.*\\.(png|jpg|jpeg|gif|svg|ico|webp))",
-      "dest": "/csa/$1"
-    },
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
     {
       "src": "/csa/(.*)",
       "dest": "/csa/$1"
