@@ -1,34 +1,38 @@
 @import "tailwindcss";
 
-:root {
-  --primary-purple: #6B2C91;
-  --primary-orange: #FF8C00;
-  --cream: #F5E6D3;
-  --white: #FFFFFF;
-  --dark-purple: #4A1B63;
-  --light-orange: #FFB347;
-  --gray-100: #F7F7F7;
-  --gray-800: #2D2D2D;
-}
+@layer base {
+  :root {
+    --primary-purple: #6B2C91;
+    --primary-orange: #FF8C00;
+    --cream: #F5E6D3;
+    --white: #FFFFFF;
+    --dark-purple: #4A1B63;
+    --light-orange: #FFB347;
+    --gray-100: #F7F7F7;
+    --gray-800: #2D2D2D;
+  }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    scroll-padding-top: 80px;
+  }
 
-body {
-  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: var(--gray-800);
-  background: var(--white);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  body {
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #2D2D2D;
+    background: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
 }
 
 /* Smooth scrolling for anchor links */

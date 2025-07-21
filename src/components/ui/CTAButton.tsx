@@ -27,13 +27,13 @@ export default function CTAButton({
 
   const variantClasses = {
     primary: `
-      bg-gradient-secondary text-white hover:shadow-acai-orange-500/25
-      focus:ring-acai-orange-300 shadow-lg
+      bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:shadow-orange-500/25
+      focus:ring-orange-300 shadow-lg hover:from-orange-600 hover:to-orange-700
     `,
     secondary: `
-      bg-white text-acai-purple-600 border-2 border-acai-purple-600
-      hover:bg-acai-purple-50 hover:shadow-acai-purple-500/25
-      focus:ring-acai-purple-300
+      bg-white text-purple-600 border-2 border-purple-600
+      hover:bg-purple-50 hover:shadow-purple-500/25
+      focus:ring-purple-300
     `
   };
 

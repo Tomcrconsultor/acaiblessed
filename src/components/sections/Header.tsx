@@ -43,7 +43,7 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
             className="flex-shrink-0"
           >
-            <h1 className="text-2xl font-poppins font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-500">
               Açaí Blessed
             </h1>
           </motion.div>
@@ -56,7 +56,7 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   whileHover={{ scale: 1.05 }}
-                  className="text-acai-purple-700 hover:text-acai-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-purple-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
                 </motion.a>
@@ -79,7 +79,7 @@ export default function Header() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-acai-purple-700 hover:text-acai-orange-500 transition-colors duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-md text-purple-700 hover:text-orange-500 transition-colors duration-200"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
@@ -119,7 +119,7 @@ export default function Header() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-3 py-2 text-acai-purple-700 hover:text-acai-orange-500 font-medium transition-colors duration-200"
+                className="block px-3 py-2 text-purple-700 hover:text-orange-500 font-medium transition-colors duration-200"
               >
                 {item.name}
               </motion.a>
